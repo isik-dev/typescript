@@ -1,3 +1,6 @@
 .env
 dist
 .cache
+./maps/.cache
+node_modules
+.fetchjson/node_modules

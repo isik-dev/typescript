@@ -1206,7 +1206,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.ra = exports.r = exports.qa = exports.q = exports.pa = exports.p = exports.oa = exports.o = exports.na = exports.n = exports.ma = exports.m = exports.la = exports.l = exports.ka = exports.k = exports.ja = exports.j = exports.ia = exports.i = exports.hb = exports.ha = exports.h = exports.gb = exports.ga = exports.g = exports.fb = exports.fa = exports.f = exports.eb = exports.ea = exports.e = exports.db = exports.da = exports.d = exports.cb = exports.ca = exports.c = exports.bb = exports.ba = exports.b = exports.ab = exports.aa = exports.a = exports._a = exports._ = exports.Za = exports.Z = exports.Ya = exports.Y = exports.Xa = exports.X = exports.Wa = exports.W = exports.Va = exports.V = exports.Ua = exports.U = exports.Ta = exports.T = exports.Sa = exports.S = exports.Ra = exports.R = exports.Qa = exports.Q = exports.Pa = exports.P = exports.Oa = exports.O = exports.Na = exports.N = exports.Ma = exports.M = exports.La = exports.L = exports.Ka = exports.K = exports.Ja = exports.J = exports.Ia = exports.I = exports.Ha = exports.H = exports.Ga = exports.G = exports.Fa = exports.F = exports.Ea = exports.E = exports.Da = exports.D = exports.Ca = exports.C = exports.Ba = exports.B = exports.Aa = exports.A = exports.$a = exports.$ = void 0;
-exports.za = exports.z = exports.ya = exports.y = exports.xa = exports.x = exports.wa = exports.w = exports.va = exports.v = exports.ua = exports.u = exports.ta = exports.t = exports.sa = exports.s = exports.ra = exports.r = exports.qa = exports.q = exports.pa = exports.p = exports.oa = exports.o = exports.na = exports.n = exports.ma = exports.m = exports.la = exports.l = exports.ka = exports.k = exports.ja = exports.j = exports.ia = exports.i = exports.hb = exports.ha = exports.h = exports.gb = exports.ga = exports.g = exports.fb = exports.fa = exports.f = exports.eb = exports.ea = exports.e = exports.db = exports.da = exports.d = exports.cb = exports.ca = exports.c = exports.bb = exports.ba = exports.b = exports.ab = exports.aa = exports.a = exports._a = exports._ = exports.Za = exports.Z = exports.Ya = exports.Y = exports.Xa = exports.X = exports.Wa = exports.W = exports.Va = exports.V = exports.Ua = exports.U = exports.Ta = exports.T = exports.Sa = exports.S = exports.Ra = exports.R = exports.Qa = exports.Q = exports.Pa = exports.P = exports.Oa = exports.O = exports.Na = exports.N = exports.Ma = exports.M = exports.La = exports.L = exports.Ka = exports.K = exports.Ja = exports.J = exports.Ia = exports.I = exports.Ha = exports.H = exports.Ga = exports.G = exports.Fa = exports.F = exports.Ea = exports.E = exports.Da = exports.D = exports.Ca = exports.C = exports.Ba = exports.B = exports.Aa = exports.A = exports.$a = exports.$ = void 0;
+exports.za = exports.z = exports.ya = exports.y = exports.xa = exports.x = exports.wa = exports.w = exports.va = exports.v = exports.ua = exports.u = exports.ta = exports.t = exports.sa = exports.s = void 0;
 
 var _chunk7AHD6BL = require("./chunk-7AHD6BL4.js");
 
@@ -24643,7 +24643,7 @@ exports.Company = Company;
 
 Object.defineProperty(exports, "__esModule", {
   value: true
-});
+}); /// <reference types="@types/google.maps" />
 
 var User_1 = require("./User");
 
@@ -24653,7 +24653,14 @@ var user = new User_1.User();
 var company = new Company_1.Company();
 console.log(user);
 console.log(company);
-},{"./User":"src/User.ts","./Company":"src/Company.ts"}],"../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+new google.maps.Map(document.getElementById('maps'), {
+  zoom: 1,
+  center: {
+    lat: 0,
+    lng: 0
+  }
+});
+},{"./User":"src/User.ts","./Company":"src/Company.ts"}],"../../../.nvm/versions/node/v16.14.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -24681,7 +24688,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61228" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64601" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -24857,5 +24864,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.ts"], null)
+},{}]},{},["../../../.nvm/versions/node/v16.14.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.ts"], null)
 //# sourceMappingURL=/src.f10117fe.js.map
