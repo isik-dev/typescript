@@ -1,6 +1,5 @@
 .env
-dist
-.cache
-./maps/.cache
-node_modules
-.fetchjson/node_modules
+.gitignore
+*/maps/dist
+*/maps/.cache
+*/fetchjson/node_modules
