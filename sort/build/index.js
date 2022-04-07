@@ -1,22 +1,8 @@
 "use strict";
-//  ------------- Bubble sort ------------- //
-class Sorter {
-    constructor(collection) {
-        this.collection = collection;
-    }
-    sort() {
-        const { length } = this.collection;
-        for (let i = 0; i < length; i++) {
-            for (let j = 0; j < length - i - 1; j++) {
-                if (this.collection[j] > this.collection[j + 1]) {
-                    const leftHandSide = this.collection[j];
-                    this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = leftHandSide;
-                }
-            }
-        }
-    }
-}
-const sorter = new Sorter([-1, 2, 1, 0]);
+Object.defineProperty(exports, "__esModule", { value: true });
+const Sorter_1 = require("./Sorter");
+const NumbersCollection_1 = require("./NumbersCollection");
+const testArray = new NumbersCollection_1.NumbersCollection([0, 1, 1241, 1623, -213, 919]);
+const sorter = new Sorter_1.Sorter(testArray);
 sorter.sort();
-console.log(sorter.collection);
+console.log(testArray.data);

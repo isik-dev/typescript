@@ -1,22 +1,7 @@
-//  ------------- Bubble sort ------------- //
+import { Sorter } from './Sorter';
+import { NumbersCollection } from './NumbersCollection';
 
-class Sorter {
-  constructor(public collection: Array<number>) {}
-
-  sort(): void {
-    const { length } = this.collection;
-    for (let i = 0; i < length; i++) {
-      for (let j = 0; j < length - i - 1; j++) {
-        if (this.collection[j] > this.collection[j + 1]) {
-          const leftHandSide = this.collection[j];
-          this.collection[j] = this.collection[j + 1];
-          this.collection[j + 1] = leftHandSide;
-        }
-      }
-    }
-  }
-}
-
-const sorter = new Sorter([-1, 2, 1, 0]);
+const testArray = new NumbersCollection([0, 1, 1241, 1623, -213, 919]);
+const sorter = new Sorter(testArray);
 sorter.sort();
-console.log(sorter.collection);
+console.log(testArray.data);
